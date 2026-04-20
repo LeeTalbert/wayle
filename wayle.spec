@@ -1,6 +1,10 @@
 %global debug_package %{nil}
 %define desktop_entry_filename com.wayle.settings.desktop
 %bcond_without tests
+# disable cargo tests on abf, each 'cargo test' is a separate compile by
+# itself which results in the builders taking an excessive/unacceptable amount
+# of time to complete package builds, they can be ran to locally check packages.
+%bcond_with cargotests
 
 Name:		wayle
 Version:	0.2.3
