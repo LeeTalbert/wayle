@@ -1,6 +1,5 @@
 %global debug_package %{nil}
 %define desktop_entry_filename com.wayle.settings.desktop
-%bcond_without tests
 
 Name:		wayle
 Version:	0.3.0
