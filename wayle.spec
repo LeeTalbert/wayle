@@ -1,9 +1,8 @@
 %global debug_package %{nil}
 %define desktop_entry_filename com.wayle.settings.desktop
-%bcond_without tests
 
 Name:		wayle
-Version:	0.2.3
+Version:	0.3.0
 Release:	1
 Source0:	https://github.com/wayle-rs/wayle/archive/refs/tags/v%{version}.tar.gz#/%{name}-%{version}.tar.gz
 Source1:	%{name}-%{version}-vendor.tar.xz
